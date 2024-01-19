@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct SwiftUIView: View {
-    let goalsScored: Int
-    let assists: Int
+    let goalsScored: String
+    let assists: String
     var imageOfPLayer: String
-    let gamesPlayed: Int
+    let gamesPlayed: String
     let playerName: String
+    let playerDesc: String
     
     var body: some View {
         VStack {
+            
             ZStack {
                 Rectangle()
                     .foregroundColor(.blue)
@@ -33,15 +35,38 @@ struct SwiftUIView: View {
                     .resizable()
                     .frame(width: 200, height:280)
                 
-                    
+                
                 
                 
             }
-            Spacer()
+            VStack {
+              Text("Career Stats")
+                    .bold()
+                    .padding(.bottom, 5)
+                HStack {
+                    VStack{
+                        Text("GP")
+                        Text(gamesPlayed)
+                    }
+                    VStack {
+                        Text("Goals")
+                        Text(goalsScored)
+                    }
+                    VStack {
+                        Text("assist")
+                        Text(assists)
+                    }
+
+                }
+                Text("Player Description")
+                    .bold()
+                    .padding(.bottom, 5)
+                Text(playerDesc)
+            }
         }
     }
 }
 
 #Preview {
-    SwiftUIView(goalsScored: 10, assists: 10, imageOfPLayer: "Jackson", gamesPlayed: 10, playerName: "Nicolas Jackson")
+    SwiftUIView(goalsScored: "10", assists: "10", imageOfPLayer: "Jackson", gamesPlayed: "10", playerName: "Nicolas Jackson", playerDesc: "He joined Chelsea in 2022, he currently players stiker and starts almost every game right now he is struggling in form but looks to have very good potential.")
 }
