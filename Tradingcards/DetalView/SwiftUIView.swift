@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct SwiftUIView: View {
-    let goalsScored: String
-    let assists: String
-    var imageOfPLayer: String
-    let gamesPlayed: String
-    let playerName: String
-    let playerDesc: String
+    let rottenTomatoes: String
+    let imdb: String
+    var imageOfMovie: String
+    let myRating: String
+    let movieName: String
+    let movieDesc: String
+    var outsideColor: Color
     
     var body: some View {
         VStack {
@@ -21,31 +22,13 @@ struct SwiftUIView: View {
             ZStack {
                 Spacer()
                 Rectangle()
-                    .foregroundColor(.blue)
-                    .frame(width: 330, height: 400)
+                    .foregroundColor(outsideColor)
+                    .frame(width: 500, height: 400)
+
                 
-                Rectangle()
-                    .foregroundColor(.white)
-                    .frame(width: 280, height: 350)
-                
-                Rectangle()
-                    .foregroundColor(.yellow)
-                    .frame(width: 230, height: 300)
-                
-                Image(imageOfPLayer)
+                Image(imageOfMovie)
                     .resizable()
-                    .frame(width: 200, height:280)
-                    .overlay {
-                        HStack {
-                            Spacer()
-                            VStack {
-                                Spacer()
-                                Image("Chelsea")
-                                    .resizable()
-                                .frame(width: 80, height: 80)
-                            }
-                        }
-                    }
+                    .frame(width: 400, height:280)
                 
                 
                 
@@ -53,28 +36,28 @@ struct SwiftUIView: View {
                 
             }
             VStack {
-              Text("Career Stats")
+              Text("Ratings")
                     .bold()
                     .padding(.bottom, 5)
                 HStack {
                     VStack{
-                        Text("GP")
-                        Text(gamesPlayed)
+                        Text("IMDB")
+                        Text(imdb)
                     }
                     VStack {
-                        Text("Goals")
-                        Text(goalsScored)
+                        Text("Rotten Tomatoes")
+                        Text(rottenTomatoes)
                     }
                     VStack {
-                        Text("assist")
-                        Text(assists)
+                        Text("My rating")
+                        Text(myRating)
                     }
 
                 }
                 Text("Player Description")
                     .bold()
                     .padding(.bottom, 5)
-                Text(playerDesc)
+                Text(movieDesc)
                 Spacer()
             }
         }
@@ -82,5 +65,5 @@ struct SwiftUIView: View {
 }
 
 #Preview {
-    SwiftUIView(goalsScored: "10", assists: "10", imageOfPLayer: "Jackson", gamesPlayed: "10", playerName: "Nicolas Jackson", playerDesc: "He joined Chelsea in 2022, he currently players stiker and starts almost every game right now he is struggling in form but looks to have very good potential.")
+    SwiftUIView(rottenTomatoes: "91%", imdb: "8.6", imageOfMovie: "City of God", myRating: "10", movieName: "City of God", movieDesc: "Brazil, 1960s, City of God. The Tender Trio robs motels and gas trucks. Younger kids watch and learn well...too well. 1970s: Li'l Zé has prospered very well and owns the city. He causes violence and fear as he wipes out rival gangs without mercy. His best friend Bené is the only one to keep him on the good side of sanity. Rocket has watched these two gain power for years, and he wants no part of it. he keeps getting swept up in the madness. All he wants to do is take pictures. 1980s: Things are out of control between the last two remaining gangs...will it ever end? Welcome to the City of God", outsideColor: .red)
 }

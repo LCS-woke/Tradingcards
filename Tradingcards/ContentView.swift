@@ -22,33 +22,36 @@ struct ContentView: View {
                 
                 
                 NavigationLink {
-                    SwiftUIView(goalsScored: "23", assists: "14", imageOfPLayer: "Mudryk", gamesPlayed: "103", playerName: "Mykhalo Mudryk", playerDesc: "Mudryk is an exceptional young player who is know for his ability to gracefully move and dribble the ball. His strength is undermined only by his exceptional thinking skills when it comes to tight situations quite common in the Premier League")
+                    SwiftUIView(rottenTomatoes: "91%", imdb: "8.6", imageOfMovie: "City of God", myRating: "10", movieName: "City of God", movieDesc: "Brazil, 1960s, City of God. The Tender Trio robs motels and gas trucks. Younger kids watch and learn well...too well. 1970s: Li'l Zé has prospered very well and owns the city. He causes violence and fear as he wipes out rival gangs without mercy. His best friend Bené is the only one to keep him on the good side of sanity. Rocket has watched these two gain power for years, and he wants no part of it. he keeps getting swept up in the madness. All he wants to do is take pictures. 1980s: Things are out of control between the last two remaining gangs...will it ever end? Welcome to the City of God", outsideColor: .red)
                 } label: {
-                    ListView(Playername: "Mudryk", profilePic: "Mudryk", description2: "Player for chelsea")
+                    ListView(movieTitle: "City of God", profilePic: "City of God", description2: "In the slums of Rio, two kids' paths diverge as one struggles to become a photographer and the other a kingpin.")
                 }
                 
                 NavigationLink {
-                    SwiftUIView(goalsScored: "310", assists: "127", imageOfPLayer: "Mbappe", gamesPlayed: "419", playerName: "Kylian Mbappe", playerDesc: "Mbappe is an extremely graceful player on and and off the pitch. His ball control is exceptional and is only undermined by his ability to finish quickly and precisely. His balls provide his teamates with something to work and strive hard for")
+                    SwiftUIView(rottenTomatoes: "83%", imdb: "8.3", imageOfMovie: "Oldboy", myRating: "9", movieName: "Oldboy", movieDesc: "Oh Dae-Su, an obnoxious drunk abducted on a rainy night in 1988, wakes up in a strange, windowless hotel room. Kept under lock and key for an unknown reason, Oh Dae-Su's invisible captors keep him fed and systematically sedated to avert suicide, providing only a colour television to keep him company. And after fifteen long years in captivity, perplexed Oh Dae-Su finds himself released. Now, his pitiless abductors encourage Oh Dae-Su to track down the ones behind the mysterious kidnapping and finally get his brutal, longed-for revenge on the unknown tormentor. However, who would hate Oh Dae-Su so much that he would deny him a quick and clean death?", outsideColor: .black)
                 } label: {
-                    ListView(Playername: "Mbappe", profilePic: "Mbappe", description2: "Potential future signing for Chelsea")
+                    ListView(movieTitle: "Oldboy", profilePic: "Oldboy", description2: "After being kidnapped and imprisoned for fifteen years, Oh Dae-Su is released, only to find that he must find his captor in five days.")
                 }
                 
                 NavigationLink {
-                    SwiftUIView(goalsScored: "1400", assists: "2000", imageOfPLayer: "Nunez", gamesPlayed: "500", playerName: "Darwin Nunez", playerDesc: "Darwin Nunez is considered by many to be the top prospect in the premier league. With a strong build and excellent frame Darwin consistantly places top in the premier league when it comes to strikers of his stature. Although he is not on Chelsea it is every Chelsea fans dream to see him play in the Chelsea blue.")
-                } label: {
-                    ListView(Playername: "Nunez", profilePic: "Nunez", description2: "Chelsea singing in th future?")
-                }
-                
-                NavigationLink {
-                    SwiftUIView(goalsScored: "3", assists: "5", imageOfPLayer: "Jackson", gamesPlayed: "25", playerName: "Nicolas Jackson", playerDesc: "Nicolas Jackson is a bright up and coming striker out of Senegal. He moved to Chelsea from Villareal and has gotten off to a slow start but is expected to push forward.")
+                    SwiftUIView(rottenTomatoes: "96%", imdb: "8.1", imageOfMovie: "La Haine", myRating: "9.5", movieName: "La Haine", movieDesc: "The film follows three young men and their time spent in the French suburban 'ghetto,' over a span of twenty-four hours. Vinz, a Jew, Saïd, an Arab, and Hubert, a black boxer, have grown up in these French suburbs where high levels of diversity coupled with the racist and oppressive police force have raised tensions to a critical breaking point. During the riots that took place a night before, a police officer lost his handgun in the ensuing madness, only to leave it for Vinz to find. Now, with a newfound means to gain the respect he deserves, Vinz vows to kill a cop if his friend Abdel dies in the hospital, due the beating he received while in police custody.", outsideColor: .gray)
+                    
                     
                 } label: {
-                    ListView(Playername: "Jackson", profilePic: "Jackson", description2: "Player for chelsea")
+                    ListView(movieTitle: "La Haine", profilePic: "La Haine", description2: "24 hours in the lives of three young men in the French suburbs the day after a violent riot.")
+                }
+                
+                NavigationLink {
+                    SwiftUIView(rottenTomatoes: "87%", imdb: "8.1", imageOfMovie: "Clockwork Orange", myRating: "9", movieName: "Clockwork Orange", movieDesc: "Protagonist Alex DeLarge is an 'ultraviolent' youth in futuristic Britain. As with all luck, his eventually runs out and he's arrested and convicted of murder. While in prison, Alex learns of an experimental program in which convicts are programmed to detest violence. If he goes through the program, his sentence will be reduced and he will be back on the streets sooner than expected. But Alex's ordeals are far from over once he hits the streets of Britain.", outsideColor: .orange)
+                    
+                } label: {
+                    ListView(movieTitle: "Clockwork Orange", profilePic: "Clockwork Orange", description2: "In the future, a sadistic gang leader is imprisoned and volunteers for a conduct-aversion experiment, but it doesn't go as planned.")
                 }
 
             }
+            .navigationTitle("Trading Cards")
         }
-        .padding()
+        
     }
 }
 

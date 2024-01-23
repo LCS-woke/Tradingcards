@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ListView: View {
-    let Playername: String
+    let movieTitle: String
     let profilePic: String
     let description2: String
     
@@ -22,7 +22,7 @@ struct ListView: View {
             
             VStack {
                 HStack {
-                    Text(Playername)
+                    Text(movieTitle)
                         .font(Font.system(size: 20, weight: .semibold))
                     
                     
@@ -45,5 +45,5 @@ struct ListView: View {
 }
 
 #Preview {
-    ListView(Playername: "Mudryk", profilePic: "Mudryk", description2: "Player fro chelsea since 2022")
+    ListView(movieTitle: "City of God", profilePic: "City of God", description2: "Movie about a photagrapher, photographing life in the fevalas")
 }
