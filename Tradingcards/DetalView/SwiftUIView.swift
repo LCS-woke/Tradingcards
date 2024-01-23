@@ -19,6 +19,7 @@ struct SwiftUIView: View {
         VStack {
             
             ZStack {
+                Spacer()
                 Rectangle()
                     .foregroundColor(.blue)
                     .frame(width: 330, height: 400)
@@ -34,6 +35,18 @@ struct SwiftUIView: View {
                 Image(imageOfPLayer)
                     .resizable()
                     .frame(width: 200, height:280)
+                    .overlay {
+                        HStack {
+                            Spacer()
+                            VStack {
+                                Spacer()
+                                Image("Chelsea")
+                                    .resizable()
+                                .frame(width: 80, height: 80)
+                            }
+                        }
+                    }
+                
                 
                 
                 
@@ -62,6 +75,7 @@ struct SwiftUIView: View {
                     .bold()
                     .padding(.bottom, 5)
                 Text(playerDesc)
+                Spacer()
             }
         }
     }

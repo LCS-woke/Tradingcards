@@ -15,6 +15,7 @@
 		4B616B312B5AB3CB00D02DE0 /* TradingcardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B616B302B5AB3CB00D02DE0 /* TradingcardsUITests.swift */; };
 		4B616B332B5AB3CB00D02DE0 /* TradingcardsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B616B322B5AB3CB00D02DE0 /* TradingcardsUITestsLaunchTests.swift */; };
 		4B616B412B5AB51D00D02DE0 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B616B402B5AB51D00D02DE0 /* SwiftUIView.swift */; };
+		4B616B452B604D8900D02DE0 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B616B442B604D8900D02DE0 /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		4B616B302B5AB3CB00D02DE0 /* TradingcardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingcardsUITests.swift; sourceTree = "<group>"; };
 		4B616B322B5AB3CB00D02DE0 /* TradingcardsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingcardsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4B616B402B5AB51D00D02DE0 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		4B616B442B604D8900D02DE0 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				4B616B402B5AB51D00D02DE0 /* SwiftUIView.swift */,
+				4B616B442B604D8900D02DE0 /* ListView.swift */,
 			);
 			path = DetalView;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B616B452B604D8900D02DE0 /* ListView.swift in Sources */,
 				4B616B182B5AB3C700D02DE0 /* ContentView.swift in Sources */,
 				4B616B162B5AB3C700D02DE0 /* TradingcardsApp.swift in Sources */,
 				4B616B412B5AB51D00D02DE0 /* SwiftUIView.swift in Sources */,
