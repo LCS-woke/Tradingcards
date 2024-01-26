@@ -47,9 +47,15 @@ struct ContentView: View {
                 } label: {
                     ListView(movieTitle: "Clockwork Orange", profilePic: "Clockwork Orange", description2: "In the future, a sadistic gang leader is imprisoned and volunteers for a conduct-aversion experiment, but it doesn't go as planned.")
                 }
+                
+                NavigationLink {
+                    SwiftUIView(rottenTomatoes: "100", imdb: "8.2", imageOfMovie: "La Samourai", myRating: "8", movieName: "La Samourai", movieDesc: "In Paris, Jef Costello is a lonely hit man who works under contract. He is hired to kill the owner of a club and becomes the prime suspect of the murder. However, his perfect alibi drops the accusation against him. His girlfriend Jane, her client and citizen above any suspicion Wiener and Valerie, the pianist of the club and main witness of the crime, provide the necessary evidence of his innocence supporting his alibi. Free, he is betrayed and chased by the gangsters sent by the one who hired him and also by the police, not convinced of his innocence. Jef seeks out who has hired him to revenge", outsideColor: .gray)
+                }label: {
+                    ListView(movieTitle: "La Samourai", profilePic: "La Samourai", description2: "After professional hitman Jef Costello is seen by witnesses his efforts to provide himself an alibi drive him further into a corner.")
+                }
 
             }
-            .navigationTitle("Trading Cards")
+            .navigationTitle("My top Movies")
         }
         
     }

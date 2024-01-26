@@ -18,9 +18,12 @@ struct SwiftUIView: View {
     
     var body: some View {
         VStack {
-            
+            Text(movieName)
+                .bold()
+                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                .padding(.bottom, 5)
             ZStack {
-                Spacer()
+                
                 Rectangle()
                     .foregroundColor(outsideColor)
                     .frame(width: 500, height: 400)
@@ -58,7 +61,6 @@ struct SwiftUIView: View {
                     .bold()
                     .padding(.bottom, 5)
                 Text(movieDesc)
-                Spacer()
             }
         }
     }
